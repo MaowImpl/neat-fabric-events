@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "neat-fabric-events",
+  "version": "${version}",
+
+  "name": "Neat Fabric Events",
+  "description": "An event API, to be used by other event libraries.",
+  "authors": ["YTG1234"],
+  "contact": {
+    "repo": "https://github.com/YTG1234/neat-fabric-events/"
+  },
+
+  "license": "LGPL-3.0",
+
+  "environment": "*",
+  "entrypoints": {},
+
+  "mixins": [
+    "neat-fabric-events.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.10.8",
+    "fabric": "*",
+    "minecraft": "1.16.4"
+  }
+}
