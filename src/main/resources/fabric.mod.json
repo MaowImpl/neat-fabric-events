@@ -13,10 +13,13 @@
   "license": "LGPL-3.0",
 
   "environment": "*",
-  "entrypoints": {},
+  "entrypoints": {
+    "main": ["com.example.examplestuff.ExampleModInit"]
+  },
 
   "mixins": [
-    "neat-fabric-events.mixins.json"
+    "neat-fabric-events.mixins.json",
+    "example.mixins.json"
   ],
 
   "depends": {

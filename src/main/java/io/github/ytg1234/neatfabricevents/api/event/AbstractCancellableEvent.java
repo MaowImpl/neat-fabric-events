@@ -7,18 +7,22 @@ public abstract class AbstractCancellableEvent<T> extends BaseEvent<T> {
         super(source);
     }
 
+    public AbstractCancellableEvent(@Nullable T source, boolean isClient) {
+        super(source, isClient);
+    }
+
     @Override
     public void cancel() {
         isCancelled = true;
     }
 
     @Override
-    public boolean cancellable() {
-        return true;
+    public void setCancelled(boolean isCancelled) {
+        this.isCancelled = isCancelled;
     }
 
     @Override
-    public void setCancelled(boolean isCancelled) {
-        this.isCancelled = isCancelled;
+    public boolean cancellable() {
+        return true;
     }
 }
